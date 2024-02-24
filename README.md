@@ -39,7 +39,7 @@
 
 Once all the following steps are completed, Kali Linux should be up and running! 
 
-Welcome to the adventures of Linux! :)
+Welcome to the world of Linux! :)
 
 
 
