@@ -1,0 +1,34 @@
+-- Commands to run after installing Linux on VM -- 
+
+
+Update Kali Linux: 
+  Sudo apt update
+  Sudo apt upgrade
+
+Install useful tools:
+  sudo apt install kali-linux-default
+
+Setting up a non-root user:
+  sudo adduser <username> 
+  sudo usermod -aG sudo <username> 
+* -a: This option appends the user to the specified group without removing them from any other groups.
+* -G: This option indicates that the following argument is the group to which the user will be added.
+
+Configure the sources list: 
+  sudo cp /etc/apt/sources.list /etc/apt/sources.list.bak
+  sudo echo "deb http://http.kali.org/kali kali-rolling main non-free contrib" > /etc/apt/sources.list
+  sudo apt update
+
+-- The sequence of these commands is:
+    1. First, a backup of the original sources.list file is created.
+    2. Then, the sources.list file is modified to include the Kali Linux repository.
+    3. Finally, the package lists are updated to reflect the changes made to the sources.list file.
+
+
+
+
+
+
+
+
+
